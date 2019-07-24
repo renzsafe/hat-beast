@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, blockquote {
+    font-size: .9em;
+    line-height: 1.6em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: .8em 1.2em;
+}
+
+.main-logo {
+    width: 200px;
+    height: 200px;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+section .scroll {
+    width: 8%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+}
+
+.menu {
+    width: 75px;
+    margin-top: 20%;
+}
+
+.details {
+    width: 100%;
+    margin: 2em auto 2em 3%;
+}
+
+h1 {
+    color: maroon;
+}
+
+.subhead {
+    position: relative;
+    z-index: 3;
+}
+
+.subhead {
+    font-size: 1.1em;
+}
+
+.maroon-container {
+    width: 100%;
+    background: maroon;
+    color: whitesmoke;
+    margin-top: 10%;
+    padding: 4em 0;
+    border-top-left-radius: 40px;
+    transform: skewY(-2deg);
+}
+
+.maroon-container:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: maroon;
+    position: absolute;
+    top: -39px;
+    right: 0;
+    z-index: -2;
+}
+
+.maroon-container:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    top: -80px;
+    position: absolute;
+    border-radius: 50%;
+    right: 0;
+    z-index: -1;
+}
+
+.maroon-container ul {
+    transform: skewY(2deg);
+}
+
+.maroon-container ul li p {
+    padding: 0 .5em;
+}
+
+.maroon-container img {
+    width: 10%;
+}
+
+.maroon-container ul li:nth-child(3) img {
+    width: 10%;
+}
+
+.gray-container {
+    background: whitesmoke;
+    padding: 4em 0 2em;
+    margin-top: -3%;
+}
+
+.gray-container img {
+    width: 25%;
+    border-radius: 50%;
+}
+
+.gray-container ul li:first-child {
+    margin-bottom: 2em;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    font-weight: bold;
+    color: maroon;
+}
+
+h2 {
+    margin-top: 7%;
+}
+
+.cta {
+    background: rgb(39, 177, 108);
+    width: calc(100% - 1em);
+    display: block;
+    color: white;
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 4;
+}
+
+.footer-container {
+    background: rgb(161, 157, 157);
+    color: white;
+    border-top-right-radius: 40px;
+    transform: skewY(2deg);
+}
+
+.footer-container .container {
+    transform: skewY(-2deg);
+}
+
+.footer-container::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: -39px;
+    left: 0;
+    z-index: -2;
+}
+
+.footer-container::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    top: -80px;
+    left: 0;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+ul.footer-links {
+    margin: 0 auto;
+}
+
+ul.footer-links li {
+    display: inline-block;
+}
+
+ul.footer-links li a {
+    font-size: .8em;
+    color: black;
+}
+
+nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(36,41,44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(49,55,59);
+
+}
+
+nav ul li a:hover {
+    background: rgb(69, 78, 83);
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+
+.exit-btn img {
+    width: 30px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 650px) {
+
+    .details {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .subhead {
+        font-size: 1.4em;
+        margin-bottom: 12%;
+    }
+
+    .maroon-container {
+        margin: 0;
+    }
+
+    .maroon-container img {
+        width: 17%;
+    }
+
+    .maroon-container ul li:nth-child(3) img {
+        width: 17%;
+        margin-top: -6px;
+    }
+
+    .maroon-container ul {
+        display: flex;
+        margin-top: -1em;
+        align-items: center;
+    }
+
+    .maroon-container ul li {
+        margin-bottom: 0;
+    }
+
+    .maroon-container ul li p {
+        padding: 0 .8em;
+    }
+
+    .gray-container ul {
+        display: flex;
+    }
+
+    nav ul {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 875px) {
+
+    .subhead {
+        margin-bottom: 15%;
+    }
+
+    .maroon-container ul {
+        margin: 0 0 4% 0;
+    }
+
+    .gray-container ul {
+        margin: 4% 0 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .cta {
+        width: 50%;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .show-desktop {
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    nav ul {
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: flex;
+        padding-top: 0;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        color: maroon;
+        background-color: inherit;
+        text-align: right;
+        padding: 1em 2em;
+    }
+
+    nav ul li a:hover {
+        background: inherit;
+    }
+
+    .scroll {
+        width: 25px;
+        animation: move 1s infinite alternate;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateY(Opx);
+        }
+        100% {
+            transform: translateY(20px);
+        }
+    }
+}
+
+@media only screen and (min-width: 6100px) {
+
+    .details {
+        width: 150%;
+        margin: 5em auto 4em 15%;
+    }
+
+    .container {
+        width: 70%;
+    }
+
+    .maroon-container {
+        padding: 7em 0 2em;
+    }
+
+    .maroon-container ul li p {
+        font-size: 1.3em;
+    }
+
+    .gray-container {
+        padding: 6em 0 4em;
+    }
+
+    h2 {
+        margin-top: 4em;
+    }
+
+    .maroon-container img {
+        width: 20%;
+    }
+
+    .maroon-container ul li:nth-child(3) img {
+        width: 20%;
+        margin-top: -4px;
+    }
+}
