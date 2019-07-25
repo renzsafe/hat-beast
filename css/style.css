@@ -3,11 +3,13 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    background: black;
 }
 
 p, blockquote {
     font-size: .9em;
     line-height: 1.6em;
+    color: whitesmoke;
 }
 
 ul {
@@ -22,41 +24,49 @@ ul {
 }
 
 .main-logo {
-    width: 200px;
-    height: 200px;
+    width: 173px;
+    height: 60px;
 }
 
 .hide-mobile {
     display: none;
 }
 
+section {
+    margin-top: 10%;
+}
 section .scroll {
     width: 8%;
+    margin-top: -10%;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
-    background: white;
+    justify-content: center;
+    background: black;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
 }
 
 .menu {
-    width: 75px;
-    margin-top: 20%;
+    width: 32px;
+    margin-top: 35%;
 }
 
 .details {
-    width: 100%;
-    margin: 2em auto 2em 3%;
+    width: 90%;
+    margin: 1em auto 2em 3%;
+    height: 150px;
 }
 
 h1 {
-    color: maroon;
+    color: whitesmoke;
+    margin-top: -20px;
 }
 
 .subhead {
     position: relative;
-    z-index: 3;
 }
 
 .subhead {
@@ -65,7 +75,7 @@ h1 {
 
 .maroon-container {
     width: 100%;
-    background: maroon;
+    background: rgb(77, 74, 74);
     color: whitesmoke;
     margin-top: 10%;
     padding: 4em 0;
@@ -77,23 +87,21 @@ h1 {
     content: "";
     width: 40px;
     height: 40px;
-    background-color: maroon;
+    background-color: rgb(77, 74, 74);
     position: absolute;
     top: -39px;
     right: 0;
-    z-index: -2;
 }
 
 .maroon-container:after {
     content: "";
     width: 80px;
     height: 80px;
-    background-color: white;
+    background-color: black;
     top: -80px;
     position: absolute;
     border-radius: 50%;
     right: 0;
-    z-index: -1;
 }
 
 .maroon-container ul {
@@ -113,9 +121,9 @@ h1 {
 }
 
 .gray-container {
-    background: whitesmoke;
+    background: rgb(77, 74, 74);
     padding: 4em 0 2em;
-    margin-top: -3%;
+    margin-top: -8%;
 }
 
 .gray-container img {
@@ -134,11 +142,12 @@ figure {
 
 figcaption {
     font-weight: bold;
-    color: maroon;
+    color: whitesmoke;
 }
 
 h2 {
     margin-top: 7%;
+    color: whitesmoke;
 }
 
 .cta {
@@ -152,12 +161,12 @@ h2 {
     font-size: 1.5em;
     margin: 3% auto 7%;
     position: relative;
-    z-index: 4;
+    z-index: 2;
 }
 
 .footer-container {
     background: rgb(161, 157, 157);
-    color: white;
+    color: whitesmoke;
     border-top-right-radius: 40px;
     transform: skewY(2deg);
 }
@@ -170,7 +179,7 @@ h2 {
     content: "";
     width: 40px;
     height: 40px;
-    background-color: whitesmoke;
+    background-color: rgb(161, 157, 157);
     position: absolute;
     top: -39px;
     left: 0;
@@ -181,7 +190,7 @@ h2 {
     content: "";
     width: 80px;
     height: 80px;
-    background-color: white;
+    background-color: black;
     position: absolute;
     top: -80px;
     left: 0;
@@ -210,7 +219,7 @@ nav ul {
     text-align: left;
     background: rgb(36,41,44);
     height: 100%;
-    z-index: 7;
+    z-index: 4;
     padding-top: 3em;
 }
 
@@ -243,7 +252,8 @@ nav ul li a:hover {
 @media only screen and (min-width: 650px) {
 
     .details {
-        width: 100%;
+        width: 60%;
+        height: 250px;
     }
 
     h1 {
@@ -341,7 +351,7 @@ nav ul li a:hover {
     }
 
     nav ul li a {
-        color: maroon;
+        color: whitesmoke;
         background-color: inherit;
         text-align: right;
         padding: 1em 2em;
