@@ -24,8 +24,10 @@ ul {
 }
 
 .main-logo {
-    width: 173px;
-    height: 60px;
+    width: 141px;
+    height: 28px;
+    margin-top: 1%;
+    margin-right: -3px;
 }
 
 .hide-mobile {
@@ -43,7 +45,7 @@ section .scroll {
 header {
     display: flex;
     justify-content: center;
-    background: black;
+    background: rgb(88, 88, 88);
     position: fixed;
     z-index: 3;
     width: 100%;
@@ -51,17 +53,17 @@ header {
 
 .menu {
     width: 32px;
-    margin-top: 35%;
+    margin-left: 100px;
 }
 
 .details {
-    width: 90%;
-    margin: 1em auto 2em 3%;
-    height: 150px;
+    width: 98%;
+    margin: -3em auto -3em 0%;
+    height: 260px;
 }
 
 h1 {
-    color: whitesmoke;
+    color: rgb(212, 56, 56);
     margin-top: -20px;
 }
 
@@ -121,9 +123,9 @@ h1 {
 }
 
 .gray-container {
-    background: rgb(77, 74, 74);
-    padding: 4em 0 2em;
-    margin-top: -8%;
+    background: rgb(141, 138, 138);
+    padding: 5em 0 2em;
+    margin-top: -25px;
 }
 
 .gray-container img {
@@ -169,6 +171,7 @@ h2 {
     color: whitesmoke;
     border-top-right-radius: 40px;
     transform: skewY(2deg);
+    padding-bottom: 50px;
 }
 
 .footer-container .container {
@@ -252,8 +255,9 @@ nav ul li a:hover {
 @media only screen and (min-width: 650px) {
 
     .details {
-        width: 60%;
-        height: 250px;
+        width: 80%;
+        height: 450px;
+        margin-top: -10%;
     }
 
     h1 {
