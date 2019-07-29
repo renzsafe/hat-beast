@@ -57,14 +57,14 @@ header {
 }
 
 .details {
-    width: 98%;
-    margin: -3em auto -3em 0%;
-    height: 260px;
+    width: 75%;
+    height: 100px;
+    margin-top: 10%;
 }
 
 h1 {
-    color: rgb(212, 56, 56);
-    margin-top: -20px;
+    color: whitesmoke;
+    margin-top: 10px;
 }
 
 .subhead {
@@ -255,14 +255,14 @@ nav ul li a:hover {
 @media only screen and (min-width: 650px) {
 
     .details {
-        width: 80%;
-        height: 450px;
-        margin-top: -10%;
+        width: 78%;
+        height: 235px;
+        margin-top: 10%;
     }
 
     h1 {
         font-size: 3em;
-        margin: 0;
+        margin: 88px;
     }
 
     .subhead {
