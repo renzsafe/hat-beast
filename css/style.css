@@ -123,14 +123,13 @@ h1 {
 }
 
 .gray-container {
-    background: rgb(141, 138, 138);
+    background: black;
     padding: 5em 0 2em;
     margin-top: -25px;
 }
 
 .gray-container img {
-    width: 25%;
-    border-radius: 50%;
+    width: 25%; 
 }
 
 .gray-container ul li:first-child {
@@ -297,10 +296,6 @@ nav ul li a:hover {
         padding: 0 .8em;
     }
 
-    .gray-container ul {
-        display: flex;
-    }
-
     nav ul {
         width: 40%;
     }
@@ -316,9 +311,6 @@ nav ul li a:hover {
         margin: 0 0 4% 0;
     }
 
-    .gray-container ul {
-        margin: 4% 0 0;
-    }
 }
 
 @media only screen and (min-width: 1024px) {
